@@ -117,10 +117,92 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"index.js":[function(require,module,exports) {
-console.log('parcel carai');
+})({"angular/app/components/ajs.component.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  controller: function controller($scope) {
+    $scope.title = "AngularJS counter";
+    $scope.clicks = 0;
+
+    $scope.someClickTest = function () {
+      $scope.clicks += 1;
+      $scope.title = "AngularJS: Clicked " + $scope.clicks + " times";
+    };
+  },
+  template: "<div class= ''><h1 class='new-class'>{{ title }}</h1><button ng-click='someClickTest()'>AngularJS button!</button></div>"
+};
+/* angular.module('ajs').
+    component('ajs', {
+        template: "<div class= ''><h1 class='new-class'>{{ title }}</h1><button ng-click='someClickTest()'>AngularJS button!</button></div>",
+        controller: function($scope){
+            $scope.title = "AngularJS counter"
+            $scope.clicks = 0
+            $scope.someClickTest = function(){
+                $scope.clicks += 1
+                $scope.title = "AngularJS: Clicked " + $scope.clicks + " times"
+            }
+        }
+    }) */
+
+exports.default = _default;
+},{}],"angular/app/components/vjs.component.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  controller: function controller($scope) {
+    $scope.title = "VueJS counter";
+    $scope.clicks = 0;
+
+    $scope.someClickTest = function () {
+      $scope.clicks += 1;
+      $scope.title = "VueJS: Clicked " + $scope.clicks + " times";
+    };
+  },
+  template: "<div class= ''><h1 class='new-class'>{{ title }}</h1><button ng-click='someClickTest()'>VueJS button!</button></div>"
+};
+/* angular.module('vjs').
+    component('vjs', {
+        template: "<div class= ''><h1 class='new-class'>{{ title }}</h1><button ng-click='someClickTest()'>VueJS button!</button></div>",
+        controller: function($scope){
+            $scope.title = "VueJS counter"
+            $scope.clicks = 0
+            $scope.someClickTest = function(){
+                $scope.clicks += 1
+                $scope.title = "VueJS: Clicked " + $scope.clicks + " times"
+            }
+        }
+    }) */
+
+exports.default = _default;
+},{}],"angular/app/components/*.js":[function(require,module,exports) {
+module.exports = {
+  "ajs.component": require("./ajs.component.js"),
+  "vjs.component": require("./vjs.component.js")
+};
+},{"./ajs.component.js":"angular/app/components/ajs.component.js","./vjs.component.js":"angular/app/components/vjs.component.js"}],"index.js":[function(require,module,exports) {
+"use strict";
+
+var components = _interopRequireWildcard(require("./angular/app/components/*.js"));
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
 var app = angular.module('app', ['ajs', 'vjs']);
-},{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+
+for (component in components) {
+  angular.component(component, components[component].default);
+}
+},{"./angular/app/components/*.js":"angular/app/components/*.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -148,7 +230,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37619" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36841" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

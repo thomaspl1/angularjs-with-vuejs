@@ -118,9 +118,14 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"angular/app/ajs/ajs.component.js":[function(require,module,exports) {
-'use strict';
+"use strict";
 
-angular.module('ajs').component('ajs', {
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _default = angular.module('ajs').component('ajs', {
   template: "<div class= ''><h1 class='new-class'>{{ title }}</h1><button ng-click='someClickTest()'>AngularJS button!</button></div>",
   controller: function controller($scope) {
     $scope.title = "AngularJS counter";
@@ -132,6 +137,8 @@ angular.module('ajs').component('ajs', {
     };
   }
 });
+
+exports.default = _default;
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -160,7 +167,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37619" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36841" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
