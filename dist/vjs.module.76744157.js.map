@@ -1,0 +1,1 @@
+{"version":3,"sources":["angular/app/vjs/vjs.module.js"],"names":["angular","module"],"mappings":"AAAA;;AAEAA,OAAO,CAACC,MAAR,CAAe,KAAf,EAAsB,EAAtB","file":"vjs.module.76744157.js","sourceRoot":"../src","sourcesContent":["'use strict';\n\nangular.module('vjs', []);"]}

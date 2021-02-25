@@ -1,0 +1,1 @@
+{"version":3,"sources":["angular/app/app.module.js"],"names":["angular","module"],"mappings":"AAAA;;AAEAA,OAAO,CAACC,MAAR,CAAe,KAAf,EAAsB,CAAC,KAAD,EAAQ,KAAR,CAAtB","file":"app.module.9ab983b9.js","sourceRoot":"../src","sourcesContent":["'use strict';\n\nangular.module('app', ['ajs', 'vjs']);"]}

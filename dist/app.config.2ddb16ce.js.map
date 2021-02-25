@@ -1,0 +1,1 @@
+{"version":3,"sources":["angular/app/app.config.js"],"names":["angular","module","config"],"mappings":"AAAA;;AAEAA,OAAO,CAACC,MAAR,CAAe,KAAf,EACIC,MADJ,CACW,YAAU,CAAE,CADvB","file":"app.config.2ddb16ce.js","sourceRoot":"../src","sourcesContent":["'use strict';\n\nangular.module('app').\n    config(function(){});"]}

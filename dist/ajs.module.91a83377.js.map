@@ -1,0 +1,1 @@
+{"version":3,"sources":["angular/app/ajs/ajs.module.js"],"names":["angular","module"],"mappings":"AAAA;;AAEAA,OAAO,CAACC,MAAR,CAAe,KAAf,EAAsB,EAAtB","file":"ajs.module.91a83377.js","sourceRoot":"../src","sourcesContent":["'use strict';\n\nangular.module('ajs', []);"]}
